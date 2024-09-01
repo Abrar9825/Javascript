@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- we use More Then One element use class -->
+    <h1>getElementsByClassName</h1>
+    <script>
+        function you() {
+            var x=document.getElementsByClassName('one1');
+            x[2].style.backgroundColor="green";
+            for (let i = 0; i < x.length; i++) {
+                x[i].style.color="red";
+                
+            }
+        }
+    </script>
+    <div class="one1">section 1 div</div>
+    <div class="one1">section 2 div </div>
+    <p>section 3 p</p>
+    <p class="one1">section 4 p</p>
+    <div>section 5 div</div><br>
+    <input type="button" value="submit" onclick="you()">
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">Hello World</div>
+
+    <script>
+        var str="I AM Shaikh AM"
+        console.log(str)
+        // indexOf ye Apni String May sabse Pele isku JAha Milega vhi ke Location Bol dega Or Ye Casenstive Hota He jesa Bade Abcd To badi he chaiye Choti Nhi chalige
+        var postion=str.indexOf("AM");
+        console.log("Last Index of Str :  "+postion);
+
+        // lastIndexOf ye pure String ko check karta he or jo Word chiye vo sabse last May Kaha Likha He Vo Dekh Ta He  
+        postion=str.lastIndexOf("AM");
+        console.log("Last Index of Str : "+postion);
+
+        // Slice mtlb Yaha se Yaha Tak Jao mtlb first Value jo he ke yaha se start Karo or jo second value hote he vo kaha tak jana he vo fix karte he 
+        substr=str.slice(0,10);
+        console.log("Slice Of String  : "+substr);
+
+        // Same is like a Slice bus ye nagtive Value nhi leta 
+        substring=str.substring(0,10);
+        console.log("substring of Str : "+substring);
+        
+        //ye ye kaam Karta he ke one se start karo or jo dusra he vo value deta he ke itne value exterct karo bus same u nhi bolta he vhaa tak jao bus itne value lo 
+        substring1=str.substr(0,10);
+        console.log("substr of Str : "+substring1);
+
+        // string Repleced yani old string may Mera jo shaikh use Change karke ke aap King daaldo baki hum jab o old string  ptint karnge to vo ese he rahige 
+        replecd=str.replace("Shaikh","King");
+        console.log("substring of Str : "+replecd);
+        console.log(str)
+
+        // strupr
+        console.log("string ke sab Word Upper Case May aaygye : "+str.toUpperCase())
+        console.log("string ke sab Word Lower Case May aaygye : "+str.toLowerCase())
+
+        var strwithextraspace="      Hello      World     "
+        console.log(strwithextraspace)
+        // Trim Function jo he aage piche ke space nikal deta he bich ke nhi nikal ta aage pice ke remove kar deta he    
+        console.log(strwithextraspace.trim()) 
+        
+        // Postion daalne ke baad us postion pe jo bhi hoga return kardega 
+        var char=str.charAt(3)
+        console.log("Mera 3 Postion Pe kosna charactor he  :"+char)
+
+        // char ka code lete he 
+        char=str.charCodeAt(3)
+        console.log("Mera 3 Postion Pe kosna charactor he uska code deta he :"+char)
+
+        // dyrek Slice karne ke liye 
+        console.log("3rd Pstion pe jo he vo print kardo : "+str[3])
+        
+
+</script>
+</body>
+
+</html>
+<!-- yaha pe main Diffrance jo he slice or substring may ke slice nagtive mtlb minus vale value bhi le leta he baki sab same he   -->

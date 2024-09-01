@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>object in javascript</h1>
+    <script>
+
+        var car = {
+            id: 101,
+            name: "BMW",
+            price: 200,
+
+            allwheel: function () {
+                document.write("<h1> inside object is run <br>");
+            }
+        }
+        car.allwheel();
+        document.write(car.id,"<br>");
+        document.write(car.name,"<br>");
+        document.write(car.price,"<br>");
+
+        var home = {
+            nu: 101,
+            add: "mol Ki POl",
+            area: "kalupur",
+
+            homee: function () {
+                document.write(car.name + "is stop at", home.add,"<br>");
+            }
+        }
+        home.homee();
+
+
+
+    </script>
+
+</body>
+
+</html>

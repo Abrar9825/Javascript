@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cont">
+        <h1 id="time"></h1>
+    </div>
+
+    <script>
+        function greet(name, sur) {
+            console.log("2 second ke baad aaya"+" " + name + " " + sur);
+        }
+        // greet();
+
+        // ye iske liye heke itne der baad  ye function may jao
+        // or 1 jo he function he bamdy milysceind likhe he  or 3 argu de he jitne chae utne argu pass kar sakte he 
+        // timeOut =setTimeout(greet, 2000, "abrar", "shaikh");
+        // console.log(timeOut);
+        // setTimeout may greet()  breckate nhi laga sakte
+         
+        // ye time out ko cler kardega
+        // clearTimeout(timeOut);
+
+        // ye run hota he rahega har ek sceond baad run hota raheg a  
+        // inter= setInterval(greet,1000,"Hello","Shiakh");
+        // clearInterval(inter);
+
+
+        function display(){
+            time= new Date();
+            console.log(time);
+            document.getElementById("time").innerHTML =time;
+        }
+        setInterval(display, 1000);
+        
+    </script>
+    <!-- set time out -->
+</body>
+
+</html>

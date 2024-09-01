@@ -1,0 +1,3 @@
+setTimeout : is uesd to hold a function to short time
+syntex of setTimeout is (function name,milosecond);
+When we want a set time out using a argument then we use a setTimeout in a function

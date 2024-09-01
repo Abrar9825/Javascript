@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>construct prototype</h1>
+    <script>
+        function emp(name, id, salary) {
+            this.name = name;
+            this.id = id;
+            this.salary = salary;
+        }
+        emp.prototype.post = function () {
+            return this.name + " " + " return a function prototype";
+        }
+        var v1 = new emp("abrar", 101, 100);
+        console.log(v1);
+
+        function emp1(name, id, salary, lang) {
+            emp.call(this, name, id, salary);
+            this.lang = lang;
+        }
+        emp1.prototype = Object.create(emp.prototype);
+        emp1.prototype.constructor = emp1;
+        var aru = new emp1("Shaikh", 1000, 1, "js");
+        console.log(aru);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<!-- using a multi pul object in java script -->
+<body>
+    <h1>Constructer</h1>
+    <script>
+        function cars(no, price) {
+            this.no = no;
+            this.price = price;
+            this.main = function () {
+                document.write("<h1> inside object is run <br>");
+
+            }
+
+        }
+        var c1=new cars(101,1000);
+        var c2=new cars(102,200);
+        document.write(c2.no,"<br>");
+        document.write(c1.price,"<br>");
+
+
+        c1.main();
+    </script>
+</body>
+
+</html>

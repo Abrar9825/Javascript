@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Easy Method of object</h1>
+    <script>
+        function rect(len,width) {
+            this.len=len;
+            this.width=width;
+            this.getarea=function()
+            {
+                return len*width;
+            }
+            this.getpera=function()
+            {
+                return 2*len+2*width;
+
+            }
+        }
+        var obj= new rect(5,20);
+        document.write("length of rectnagle is " + obj.len, "<br>");
+        document.write("length of rectnagle is " + obj.width, "<br>");
+        document.write("Preameter of rectnagle is " + obj.getarea(), "<br>");
+        document.write("Preameter of rectnagle is " + obj.getpera(), "<br>");
+    </script>
+</body>
+
+</html>

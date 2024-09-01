@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Area of rectangel And preameter of rectangel </h1>
+    <!-- We asign a tis value because of value is not in a function -->
+    <script>
+        var area=
+        {
+            len:10,
+            with:5,
+
+            getfind:function()
+            {   
+                return this.len*this.with;
+            },
+            getpera:function()
+            {
+                return 2*this.len+2*this.with; 
+            } 
+            
+        };
+        document.write("Length of rectnagle is "+area.len,"<br>");
+        document.write("Length of rectnagle is "+area.with,"<br>");
+        document.write("Preameter of rectnagle is "+area.getfind(),"<br>");
+        document.write("Preameter of rectnagle is "+area.getpera(),"<br>");
+
+    </script>
+</body>
+</html>

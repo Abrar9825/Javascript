@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus officiis fugit.</h1>
+    <h1>Alert Will Dealy is 3 second</h1>
+    <button onclick="start()">submit</button>
+
+    <script>
+        var mes=()=>alert("Hello I am Alert After 3 second : ");
+
+        function start()
+        {
+            // setTimeout(mes,2000);
+            setTimeout(() => {
+            mes()}, 3000);
+        }
+    </script>
+</body>
+</html>

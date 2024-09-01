@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>stactic method</h1>
+    <script>
+        class stud {
+            constructor(num1, num2) {
+                this.num1 = num1;
+                this.num2 = num2;
+            }
+            static sum(a, b) {
+                return a + b;
+                console.log("hell");
+            }
+
+        }
+        // static call by class name not a object
+        // extends : is used for a dervied from a base class 
+        // super() is a keyword use for derived data from base class
+        var obj = new stud(10, 20);
+        console.log(obj);
+        console.log(stud.sum(10, 20));
+        class stud1 extends stud {
+            // parent class  constructor
+            constructor(num1,num2,num3) {
+                super(num1,num2);
+                this.num3=num3;
+            }
+        }
+        var obj1 = new stud1(200,20,30);
+        console.log(obj1); 
+
+    </script>
+</body>
+
+</html>

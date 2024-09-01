@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cont">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident nemo, autem animi dolor sit possimus
+        dignissimos hic dolorem tenetur ad. Distinctio corporis expedita consequatur id doloremque quidem maiores nisi
+        at, quaerat corrupti molestiae perferendis quasi nesciunt debitis consequuntur. Aspernatur atque labore quae
+        explicabo officia. Eum distinctio consectetur delectus magnam laudantium!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui omnis obcaecati provident commodi, quos iusto
+        debitis. Id perferendis fuga accusamus blanditiis tempora! Nostrum debitis, dignissimos a voluptate unde qui in
+        adipisci eligendi! Officia rem perferendis asperiores voluptatibus blanditiis hic, corrupti excepturi fuga,
+        possimus harum cum amet pariatur eum deserunt a.
+    </div>
+    <button id="btn" onclick="valid()">submit</button>
+    <script>
+            let para = document.getElementById("cont")
+            // para.addEventListener("mouseover",function() {
+            //     alert("Mouse Over ") 
+            // });
+            para.addEventListener("mouseover",function() {
+                confirm("Hello")
+            })
+            para.addEventListener("mouseover",function()
+            {
+                para.style.color="red";
+            })
+
+
+        function valid() {
+
+            // let btn = document.getElementById("btn");
+            // let para = document.getElementById("cont")
+            if (para.style.display != "none") {
+                para.style.display = "none";
+
+            }
+            else {
+                para.style.display = "block";
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

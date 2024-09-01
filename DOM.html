@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="cont">
+       <ul id="nav">
+         <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Serives</li>
+    </ul>
+    </div>
+    <script>
+        
+        // id ku liya or kaam kara
+        let main=document.getElementById("main");
+        console.log(main);
+        
+        // id ku liya or kaam kara
+         let nav=document.getElementById("nav");
+        console.log(nav);
+
+        // class ku liya or kaam kara
+        let cont=document.getElementsByClassName("cont");
+        console.log(cont);
+
+        // css Selector ko use karke 
+        // It's Return a only one li 
+        let sel=document.querySelector('#nav>li');
+        console.log("Selector return",sel);
+
+        
+        let allsel=document.querySelectorAll('#nav>li');
+        console.log("Selector return",allsel);
+
+
+    </script>
+    <div class="cont">
+        <p>Hello</p>
+    </div>
+</body>
+</html>

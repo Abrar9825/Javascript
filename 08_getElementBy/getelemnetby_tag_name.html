@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- if we want to use tage name then we use index of tag and we want to consider to style to all same tag then we use for loop  -->
+<script>
+    function you() {
+        var x = document.getElementsByTagName('div');
+        var p = document.getElementsByTagName('p');
+
+        // sparte tage using index
+        x[3].style.backgroundColor = "yellow";
+        x[0].style.backgroundColor = "red";
+        x[2].style.backgroundColor = "green";
+        x[1].style.backgroundColor = "blue";
+
+        // all tag using loop
+        for (let i = 0; i < p.length; i++) {
+            p[i].style.backgroundColor="violet";
+
+        }
+
+    }
+</script>
+
+<body>
+    <h1>Getelemnt by user</h1>
+    <div class="111">This is Section 1</div>
+    <form action="">
+        <label for="">name</label>
+        <input type="text" placeholder="Enter a Name">
+        <br>
+        <label for="">age</label>
+        <input type="number" placeholder="Enter a Name">
+        <br>
+        <input type="submit">
+    </form>
+    <div class="121">This is Section 2</div>
+    <input type="radio" name="g1" id="" value="MAle">M <br>
+    
+    <div class="131">This is Section 3</div>
+    <input type="radio" name="g1" id="" value="femla">f <br>
+    <div class="141">This is Section 4</div>
+    <p>Hello i am </p>
+    <p>Hello i am </p>
+    <p>Hello i am </p>
+    <br>
+    <input type="button" value="submit" onclick="you()">
+</body>
+
+</html>

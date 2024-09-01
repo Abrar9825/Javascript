@@ -1,0 +1,47 @@
+ document.write : is like a printf means print a any value on browers so we can use document.write..
+ console.log: is used for print a value in console..
+ var : is used for all program asa global varible..
+ let : is used for public varible it's only used in function not a out side function..
+ const:is uniqly identify in program we can't use again in our program and also we can't change the value of const varible..
+ data type:(primitive)->number,string,boolean,undifined,null..
+ data type:(non-primitive)->array,object..
+ data type:(null)->when we represnt a null in our program it's represnt like a object it's object not a null..
+ oprator : in this javascript we have the 8 type of oprator 
+ 1.arithmatic
+ 2.assighment
+ 3.string
+ 4.condtinol
+ 5.logical
+ 6.Bitwise
+ 7.comprison
+ 8.typeof 
+
+1. arithmatic oprator : +,-,*,/,%,++,--  this are the arithmatic oprator
+ and which value we are use to do this called as oprand like a+b in this example a and b is oprand..
+
+2. assighment oprator : =,+=,-=,*=,/=,%=,^=,|=,**= this are the assighment oprator
+and which value we are use to do this called as oprand like a+b in this example a and b is oprand..
+in assighment oprand whatever the value in right side it's assign the value of left side like example
+a=10 in this case 10 is the right side value and it's store or asign to left side varible means a it's also called short hend oprand in a normal time we use addtion like this a=a+10 and using a assighment oprand we use like a+=10..
+
+3.string oprator: +,+= is use for sum of string like one string is hello and second is world sum of both string is hello world using + oprator..
+
+4.condtinol oprator : is also called a turnury oprator is use for check this given condtion is true or false 
+
+5.logical oprator : &&,||,! in this condtion the it's return a boolean means true or false
+->&& oprator return when the both condtion are true
+->|| oprand return when || if any one 
+->! it's make a oposite the condtion when condtionis true is return false
+ 
+6.Bitwise:the Bitwise oprator is &,|,~,^
+used to check condtion using binary number ex.binary number of 5 is 0101 and 1 is 0001 and then we are using & oprator mens 1 condtion is false then answer is false and it's work as soon as 
+
+7.comprison oprator:==,===,!=,!==,>,<,>=,<= this are the comprison oprator it' return a boolean means true or false
+
+8.typeof:it's check a typeof oprand and oprator like a number or string ext..
+
+-> assocativti : there is two type of assocativti right-to-left,left-to-right..
+the + oprator has assocativti left-to-right
+->in this case which type of oprator first the whole line is act like a first oprand or oprator like example
+the all oprand value is 10; 
+we are use a+b+"hello"+c+d in this case output is 20hello1010  so this case a+b is 20 and after string it's consider string so print as it is 

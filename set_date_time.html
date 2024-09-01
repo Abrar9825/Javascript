@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cont{
+        text-align: center;
+        background-color:rgb(213, 213, 130);
+        border:  2px solid orange;
+        padding: 20px;
+    }
+</style>
+<body>
+    <div class="cont">
+        current time is
+        <span id="time"></span> 
+    </div>
+    <script>
+        console.log("date");
+
+        let now = new Date();
+        console.log(now);
+
+        // Reference time he 
+        // Jab ke string date hogi tab ke date or time bata dega
+        // let no=new Date("2002-03-31");
+        // console.log(no);
+
+        // let no=new Date(year,month,date,hour,minut,second,milisecond);
+        let no = new Date(3020, 11, 3, 4, 5, 7, 8);
+        console.log(no);
+
+        let yr = no.getFullYear();
+        console.log("year is " + yr);
+
+
+        let month = no.getMonth();
+        console.log("month is " + month);
+
+
+        let date = no.getDate();
+        console.log("Date is " + date);
+
+        
+        // har second chal te rahegi
+        // setInterval Infinity tak run hota he uske ander time deke use set karte he ke itne itne der may chalo 
+        setInterval(update, 1000);
+        function update() {
+            time.innerHTML =new Date();
+        }
+    </script>
+</body>
+
+</html>

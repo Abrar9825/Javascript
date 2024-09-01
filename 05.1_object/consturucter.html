@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>consturcter Object</h1>
+    <script>
+        // cunstructer dose't acaept new value for adding
+        // On that time we are use a prototype to add a value 
+        function ob(name,no) {
+            this.name=name;
+            this.no=no;
+        }
+        ob.prototype.getname=function()
+        {
+            return this.name;
+        }
+        ob.prototype.getno=function()
+        {
+            return this.no;
+        }
+        ob.prototype.grade="A";
+        var obj= new ob("Abrar",101);
+        var obj1= new ob("Hello",102);
+        console.log(obj); 
+        
+        </script>
+</body>
+</html>

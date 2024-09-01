@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>promises</h1>
+    <script>
+        var prom = new Promise(function (resolve, reject) {
+            var drive = true;
+            if (drive) {
+                resolve("Yes");
+            }
+            else {
+                reject("NO");
+            }
+        });
+
+        prom.then(function (resolve) {
+            console.log(resolve+" User know how to drive");
+
+        }).catch(function (reject) {
+            console.log(reject +" User don't know how to drive");
+
+        })
+
+    </script>
+</body>
+
+</html>

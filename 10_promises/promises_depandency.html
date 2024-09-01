@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>promises depandensy</h1>
+    <script>
+        var fu = function () {
+            return new Promise(function (resolve, reject) {
+                resolve("Learnt Javascript : ");
+            });
+        };
+        var call = function (meassge) {
+            return new Promise(function (resolve, reject) {
+                resolve(meassge + " : Learnt Call back : ");
+
+            });  
+        };
+        var pr = function (meassge) {
+            return new Promise(function (resolve, reject) {
+                resolve(meassge + " :good to go promises in javasript : ");
+
+            });
+        };
+
+        fu().then(function (result) {
+            return call(result);
+        }).then(function (result) {
+            return pr(result);
+        }).then(function(result){
+            console.log("good to go : "+result);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>prototype inhertice</h1>
+    <script>
+        const emp = {
+            post: function () {
+                return "a return Value";
+            },
+            changename:function(name)
+            {
+                this.name=name;
+            }
+        };
+        // var E1=Object.create(emp);
+        // E1.name="Abrar";
+        // E1.role="CEO";
+        // writable is used for add a value when we don't write this then new value can't added
+        var E1=Object.create(emp,{
+            name:{ value : "Abrar",writable : true},
+            role :{ value : "manger"},         
+        });
+
+        E1.changename("Shaikh");
+        console.log(E1);
+    </script>
+</body>
+
+</html>

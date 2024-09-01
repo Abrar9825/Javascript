@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.xml": "bat",
+        "iostream": "cpp"
+    }
+}

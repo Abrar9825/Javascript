@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>New Using a object</h1>
+    <script>
+        var obj = new Object();
+        obj.length = 10;
+        obj.width = 20;
+
+        obj.getfind = function () {
+            return this.length * this.width;
+        };
+
+        obj.getpera = function () {
+            return 2 * this.length + 2 * this.width;
+        }
+        document.write("lengthgth of rectnagle is " + obj.length, "<br>");
+        document.write("lengthgth of rectnagle is " + obj.width, "<br>");
+        document.write("Preameter of rectnagle is " + obj.getfind(), "<br>");
+        document.write("Preameter of rectnagle is " + obj.getpera(), "<br>");
+    </script>
+</body>
+
+</html>
